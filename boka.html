@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Happy Hotell</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="grid.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed&family=Montserrat&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <img id="logo" src="img/logo.webp" alt="Happy Hotell logo">
+        <img id="view" src="img/view.webp" alt="Entrance to Happy Hotell">
+    </header>
+    <nav class="topnav" id="myTopnav">
+        <a href="index.html">Start</a>
+        <a href="boka.html" class="active">Boka</a>
+        <a href="hitta.html">Hitta</a>
+        <a href="kontakta.html">Kontakta</a>
+        <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
+    </nav>
+    <section>
+        <div class="container">
+            <form action="tack.html">
+                <div class="row">
+                    <div class="col-25">
+                        <label for="fname">Förnamn</label>
+                    </div>
+                    <div class="col-75">
+                        <input type="text" id="fname" name="Förnamn" placeholder="Ditt förnamn..">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-25">
+                        <label for="lname">Efternamn</label>
+                    </div>
+                    <div class="col-75">
+                        <input type="text" id="lname" name="Efternamn" placeholder="Ditt efternamn..">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-25">
+                        <label for="telefonummer">Telefonummer</label>
+                    </div>
+                    <div class="col-75">
+                        <input type="text" id="telefonummer" name="Telefonummer" placeholder="Ditt telefonummer..">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-25">
+                        <label for="personer">Personer</label>
+                    </div>
+                    <div class="col-75">
+                        <select id="personer" name="personer">
+                            <option value="australia">1 rum</option>
+                            <option value="canada">2 rum</option>
+                            <option value="usa">3 rum</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-25">
+                        <label for="frågor">Frågor</label>
+                    </div>
+                    <div class="col-75">
+                        <textarea id="frågor" name="frågor" placeholder="Skriv gärna.." style="height:200px"></textarea>
+                    </div>
+                </div>
+                <div class="row">
+                    <input type="submit" value="Submit">
+                </div>
+            </form>
+        </div>
+    </section>
+    <aside>
+        <ul>
+            <li>
+                Suspendisse hendrerit posuere enim, non bibendum tellus facilisis eu. Etiam pharetra
+                euismod felis
+            </li>
+            <li>
+                Suspendisse hendrerit posuere enim, non bibendum tellus facilisis eu. Etiam pharetra
+                euismod felis
+            </li>
+        </ul>
+    </aside>
+    <footer>
+        <p>Happy Hotell | Storgatan 1 | 123 45 Storstad | 012 - 12 34 56</p>
+    </footer>
+    <script src="script-nav.js"></script>
+
+
+</body>
+
+</html>

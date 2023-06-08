@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Happy Hotell</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="grid.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed&family=Montserrat&display=swap"
+        rel="stylesheet">
+
+</head>
+
+<body>
+    <header>
+        <img id="logo" src="img/logo.webp" alt="Happy Hotell logo">
+        <img id="view" src="img/view.webp" alt="Entrance to Happy Hotell">
+    </header>
+    <nav class="topnav" id="myTopnav">
+        <a href="index.html">Start</a>
+        <a href="boka.html">Boka</a>
+        <a href="hitta.html">Hitta</a>
+        <a href="kontakta.html" class="active">Kontakta</a>
+        <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
+    </nav>
+    <section>
+
+        <form action="thanks.html" method="post">
+            <fieldset>
+                <legend>Kontakta oss</legend>
+                <label>Namn
+                    <input type="text" name="namn" required>
+                </label>
+                <label>Email
+                    <input type="email" name="email" required>
+                </label>
+                <label>Är du bosatt i några av dessa länder?
+                    <select name="country">
+                        <option value="">(Välj en)</option>
+                        <option value="1">Finland</option>
+                        <option value="2">Sweden</option>
+                        <option value="3">Norway</option>
+                        <option value="4">Denmark</option>
+                        <option value="5">Ingen av dessa</option>
+                    </select>
+                </label>
+            </fieldset>
+            <fieldset>
+                <legend>Information som vi behöver känna till</legend>
+                <label>
+                    <input type="text" name="namn" required>
+                </label>
+
+            </fieldset>
+            <div class="send-button-container">
+                <input type="submit">
+            </div>
+        </form>
+    </section>
+    <aside>
+
+        <ul>
+            <li>
+                HAPPY HOTELLS HUVUDKONTOR
+                Hälsingegatan 32
+                Box 21034
+                100 31 Stockholm, Sweden
+            </li>
+            <li>
+                Nå oss genom vår mail: Happy.Hotell@hotmail.se
+            </li>
+            <li>Huvudkontorets telefon: 0771-788 789</li>
+            <li> ÖPPETTIDER
+                Måndag - torsdag 09.00 till 17.00
+                Fredag 09.00 till 16.00</li>
+        </ul>
+    </aside>
+    <footer>
+        <p>Happy Hotell | Storgatan 1 | 123 45 Storstad | 012 - 12 34 56</p>
+    </footer>
+    <script src="script-nav.js"></script>
+
+
+</body>
+
+</html>
